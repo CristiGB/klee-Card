@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&display=swap');
+
+:root{
+    --first-color: #7c0201;
+    --second-color: #2b1715;
+
+    --font-family: 'Akshar', sans-serif;
+    --name-font: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background: var(--first-color);
+    font-family: var(--text-font-family);
+}
+
+.grid{
+    display: grid;
+    gap: .75rem;
+}
+
+.container{
+    grid-template: 1fr 10fr repeat(2, 1fr) / 1fr 10fr repeat(2, 1fr);
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bomb{
+    width: 8rem;
+    height: 4rem;
+}
+
+.bomb--left{
+    transform: rotateY(180deg);
+}
+.bomb--left img{
+    width: 177%;
+    transform: translate(-3rem,-4rem);
+}
+
+.principal__title{
+    font-family: var(--font-family);
+    color: var(--second-color);
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    grid-column: 2 / 4;
+    grid-row-start: 1;
+}
+
+.circle_photo{
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    grid-column: 3 / 5;
+    grid-row-start: 1;
+}
+
+.circle_photo img{
+    height: 100%;
+}
+
+/*Target*/
+.target_container{
+    grid-column: 2 / 4 ;
+    grid-row: 2 / 4;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.image_full{
+    position: absolute;
+    width: 22rem;
+    transform: translateY(-5rem);
+}
+
+.image_full img{
+    width: 100%;
+}
+
+.target__content{
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: end;
+    margin-inline-start: 10rem;
+    height: 100%;
+    background: var(--second-color); 
+    border-radius: 8px;
+}
+
+.collage__img{
+    width: 10rem;
+}
+
+.collage__img img{
+    width: 100%;
+}
+
+
+
+.lat_nav{
+    grid-column-start: 4;
+}
+
+.bomb--right{
+    grid-column: 3 / 6;
+    grid-row: 3 / 6;
+    transform: rotateY(180deg);
+}
+
+.bomb--right img{
+    width: 155%;
+    height: auto;
+    transform: translate(-3rem,-6rem);
+}
+
+.credits{
+    grid-column: 2 / 4;
+    grid-row-start: 4;
+}
