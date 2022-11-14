@@ -16,7 +16,7 @@ sr.reveal('.image_full',{origin:'left'})
 sr.reveal(collage__imgs[0],{origin:'bottom',delay:500})
 sr.reveal(collage__imgs[1],{origin:'bottom',delay:1000})
 sr.reveal(collage__imgs[2],{origin:'bottom',delay:1500})
-sr.reveal('.target__info',{origin:'left',delay:500})
+sr.reveal('.card__info',{origin:'left',delay:500})
 
 setInterval(()=>{
   let src = img_full.src;
