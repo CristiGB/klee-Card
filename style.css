@@ -36,7 +36,7 @@ a{
 
 .grid{
     display: grid;
-    gap: .75rem;
+    gap: .5rem;
 }
 
 .container{
@@ -110,7 +110,8 @@ a{
 }
 
 .collage{
-    height: 100%;
+    width: 100%;
+    min-height: 100%;
     gap: 0;
     justify-items: center; 
     border-radius: 8px;
@@ -122,6 +123,7 @@ a{
     max-height: 120% ;
     width: 75%;
     border: 10px solid white;
+    background-color: #9a8893;
     background-position: center;
     overflow: hidden;
 }
